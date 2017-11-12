@@ -1,8 +1,8 @@
 " Vim Color File
 " Name:       synthwave.vim
-" Maintainer: https://github.com/exitface/synthwave.vim
+" Maintainer: https://github.com/yanlobkarev/synthwave.vim
 " License:    The MIT License (MIT)
-" Based On:   https://github.com/joshdick/onedark.vim, https://fsociety.info
+" Based On:   https://github.com/exitface/synthwave.vim, https://fsociety.info
 
 " +-----------------+
 " | Color Reference |
@@ -114,16 +114,24 @@ let s:cyan = { "gui": "#99BFBA", "cterm": "109" }
 
 let s:white = { "gui": "#bfb8cc", "cterm": "146" }
 
-let s:black = { "gui": "#312e39", "cterm": "53" }
+"let s:black = { "gui": "#312e39", "cterm": "53" }
 let s:visual_black = { "gui": "NONE", "cterm": "NONE" }
 
 let s:comment_grey = { "gui": "#736075", "cterm": "96" }
 let s:gutter_fg_grey = { "gui": "#4f4b58", "cterm": "59" }
-let s:cursor_grey =  { "gui": "#393642", "cterm": "60" }
-let s:visual_grey = { "gui": "#423f4d", "cterm": "61"}
+"let s:cursor_grey =  { "gui": "#393642", "cterm": "60" }
+"let s:visual_grey = { "gui": "#423f4d", "cterm": "61"}
 let s:menu_grey = { "gui": s:visual_grey.gui, "cterm": s:visual_grey.cterm }
 let s:special_grey = { "gui": "#545b66", "cterm": "62" }
-let s:vertsplit = { "gui": "#181A1F", "cterm": "16" }
+"let s:vertsplit = { "gui": "#181A1F", "cterm": "16" }
+
+" i.lobkarev`s customization
+set fillchars+=fold:\ ,vert:\   
+let s:black = { "gui": "#312e39", "cterm": "234" }
+let s:cursor_grey =  { "gui": "#393642", "cterm": "233" }
+let s:visual_grey = { "gui": "#423f4d", "cterm": "236"}
+let s:vertsplit = { "gui": "#181A1F", "cterm": "241" }
+call s:h("NonText", { "fg": s:blue }) " '~' and '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line).
 
 " +---------------------------------------------------------+
 " | Syntax Groups (descriptions and ordering from `:h w18`) |
@@ -191,7 +199,8 @@ call s:h("CursorLineNr", {}) " Like LineNr when 'cursorline' or 'relativenumber'
 call s:h("MatchParen", { "fg": s:blue, "gui": "underline" }) " The character under the cursor or just before it, if it is a paired bracket, and its match.
 call s:h("ModeMsg", {}) " 'showmode' message (e.g., "-- INSERT --")
 call s:h("MoreMsg", {}) " more-prompt
-call s:h("NonText", { "fg": s:special_grey }) " '~' and '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line).
+"call s:h("NonText", { "fg": s:special_grey }) " '~' and '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line).
+
 call s:h("Normal", { "fg": s:white, "bg": s:black }) " normal text
 call s:h("Pmenu", { "bg": s:menu_grey }) " Popup menu: normal item.
 call s:h("PmenuSel", { "fg": s:black, "bg": s:blue }) " Popup menu: selected item.

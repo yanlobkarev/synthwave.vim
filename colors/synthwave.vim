@@ -121,7 +121,7 @@ let s:comment_grey = { "gui": "#736075", "cterm": "96" }
 let s:gutter_fg_grey = { "gui": "#4f4b58", "cterm": "59" }
 "let s:cursor_grey =  { "gui": "#393642", "cterm": "60" }
 "let s:visual_grey = { "gui": "#423f4d", "cterm": "61"}
-let s:menu_grey = { "gui": s:visual_grey.gui, "cterm": s:visual_grey.cterm }
+"let s:menu_grey = { "gui": s:visual_grey.gui, "cterm": s:visual_grey.cterm }
 let s:special_grey = { "gui": "#545b66", "cterm": "62" }
 "let s:vertsplit = { "gui": "#181A1F", "cterm": "16" }
 
@@ -131,6 +131,7 @@ let s:black = { "gui": "#312e39", "cterm": "234" }
 let s:cursor_grey =  { "gui": "#393642", "cterm": "233" }
 let s:visual_grey = { "gui": "#423f4d", "cterm": "236"}
 let s:vertsplit = { "gui": "#181A1F", "cterm": "241" }
+let s:menu_grey = { "gui": s:visual_grey.gui, "cterm": s:visual_grey.cterm }
 call s:h("NonText", { "fg": s:blue }) " '~' and '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line).
 
 " +---------------------------------------------------------+

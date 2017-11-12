@@ -1,4 +1,5 @@
 # synthwave.vim
+## (Stolen from https://github.com/exitface/synthwave.vim.git)
 
 A dark Vim color scheme for the GUI and 256-color terminals, based on fsociety's
 [synthwave](https://code.fsociety.info/dotfiles/file/nvim/.config/nvim/plugged/synthwave/colors/synthwave.vim.html) theme.
